@@ -1,1 +1,3 @@
-test
+# Raspberry Pi Programmable Lights
+
+Lights :)
