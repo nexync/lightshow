@@ -9,12 +9,14 @@ GPIO.setup(ledPin, GPIO.OUT)
 
 try:
 	while(True):
-		print("LED turning on.")
 		GPIO.output(ledPin, GPIO.HIGH)
-		time.sleep(0.5)
-		print("LED turning off.")
+		time.sleep(0.25)
 		GPIO.output(ledPin, GPIO.LOW) 
 		time.sleep(1)
+		GPIO.output(ledPin, GPIO.HIGH)
+		time.sleep(0.1)
+		GPIO.output(ledPin, GPIO.LOW) 
+		time.sleep(1.25)
 
 # End program cleanly with keyboard
 except KeyboardInterrupt:
