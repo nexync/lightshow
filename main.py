@@ -15,3 +15,5 @@ for i in pinlist:
     GPIO.output(i, GPIO.LOW)
 
 p.cascade(pinlist)
+p.cascade(pinlist)
+p.cascade(pinlist)
