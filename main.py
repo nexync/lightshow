@@ -15,5 +15,6 @@ for i in pinlist:
     GPIO.output(i, GPIO.LOW)
 
 p.cascade(pinlist,0.2,0.1)
-p.cascade(pinlist,0.1,0.05)
 p.cascade(pinlist,0.2,0.1)
+p.stairup(pinlist,0.1,1)
+p.blink(pinlist,0.5)
