@@ -12,7 +12,7 @@ pinlist = [26,19,13,20,21]
 #SETUP PINS
 for i in pinlist:
     GPIO.setup(i, GPIO.OUT)
-    GPIO.output(i, GPIO.LOW)
+    GPIO.output(i, GPIO.HIGH)
 
 time.sleep(5)
 p.cascade(pinlist,0.2,0.1)
