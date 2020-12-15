@@ -14,9 +14,10 @@ for i in pinlist:
     GPIO.setup(i, GPIO.OUT)
     GPIO.output(i, GPIO.LOW)
 
+time.sleep(5)
 p.cascade(pinlist,0.2,0.1)
 p.cascade(pinlist,0.2,0.1)
 p.stairup(pinlist,0.1,1)
-#p.blink(pinlist,0.5)
+p.blink(pinlist,0.5)
 
 GPIO.cleanup()
