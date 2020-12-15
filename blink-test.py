@@ -7,6 +7,7 @@ GPIO.setwarnings(False)
 ledPin = 26
 led2Pin = 19
 GPIO.setup(ledPin, GPIO.OUT)
+GPIO.setup(led2Pin ,GPIO.OUT)
 
 try:
 	while(True):
