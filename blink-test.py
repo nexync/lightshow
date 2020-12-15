@@ -17,7 +17,7 @@ try:
 		GPIO.output(led2Pin, GPIO.LOW) 
 		time.sleep(0.5)
 		GPIO.output(ledPin,GPIO.LOW)
-		time.sleep(0.5
+		time.sleep(0.5)
 
 # End program cleanly with keyboard
 except KeyboardInterrupt:
