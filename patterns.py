@@ -7,7 +7,7 @@ GPIO.setwarnings(False)
 def cascade(pinlist):
     for i in pinlist:
         GPIO.output(i, GPIO.HIGH)
-        time.sleep(0.1)
+        time.sleep(1)
         GPIO.output(i, GPIO.LOW)
 
 def stairup(pinlist):
