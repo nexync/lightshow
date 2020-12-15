@@ -27,5 +27,7 @@ def blink(pinlist,delay):
     for i in pinlist:
         GPIO.output(i, GPIO.LOW)
 
+
+
 def random(pinlist,delay):
     num = Math.random(len(pinlist))
