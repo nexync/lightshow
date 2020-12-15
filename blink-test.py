@@ -12,11 +12,11 @@ try:
 		GPIO.output(ledPin, GPIO.HIGH)
 		time.sleep(0.25)
 		GPIO.output(ledPin, GPIO.LOW) 
-		time.sleep(1)
+		time.sleep(0.25)
 		GPIO.output(ledPin, GPIO.HIGH)
 		time.sleep(0.1)
 		GPIO.output(ledPin, GPIO.LOW) 
-		time.sleep(1.25)
+		time.sleep(1)
 
 # End program cleanly with keyboard
 except KeyboardInterrupt:
