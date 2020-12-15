@@ -6,7 +6,7 @@ import patterns as p
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
-pinlist = [13,19,26,20,21]
+pinlist = [26,19,13,21,20]
 
 
 #SETUP PINS
