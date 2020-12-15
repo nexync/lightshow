@@ -7,12 +7,19 @@ GPIO.setwarnings(False)
 ledPin = 13
 GPIO.setup(ledPin, GPIO.OUT)
 
-for i in range(5):
-	print("LED turning on.")
-	GPIO.output(ledPin, GPIO.HIGH)
-	time.sleep(0.5)
-	print("LED turning off.")
-	GPIO.output(ledPin, GPIO.LOW) 
-	time.sleep(0.5)
+try:
+	while(True):
+		print("LED turning on.")
+		GPIO.output(ledPin, GPIO.HIGH)
+		time.sleep(0.5)
+		print("LED turning off.")
+		GPIO.output(ledPin, GPIO.LOW) 
+		time.sleep(1)
 
-GPIO.cleanup()
+# End program cleanly with keyboard
+except KeyboardInterrupt:
+    print("Quit")
+
+    # Reset GPIO settings
+
+    GPIO.cleanup()
