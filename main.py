@@ -16,4 +16,4 @@ for i in pinlist:
 
 
 p.cascade(pinlist,3,1)
-GPIO.cleanup()
+#GPIO.cleanup()
