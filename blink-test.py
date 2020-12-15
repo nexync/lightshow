@@ -13,12 +13,13 @@ try:
 	while(True):
 		GPIO.output(ledPin, GPIO.HIGH)
 		time.sleep(1.5)
+		GPIO.output(ledPin,GPIO.LOW)
+		time.sleep(0.5)
 		GPIO.output(led2Pin,GPIO.HIGH)
 		time.sleep(1.5)
 		GPIO.output(led2Pin, GPIO.LOW) 
 		time.sleep(0.5)
-		GPIO.output(ledPin,GPIO.LOW)
-		time.sleep(0.5)
+		
 
 # End program cleanly with keyboard
 except KeyboardInterrupt:
