@@ -3,7 +3,7 @@ import time
 
 GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
-ledPin = 12
+ledPin = 6
 GPIO.setup(ledPin, GPIO.OUT)
 
 for i in range(5):
