@@ -1,0 +1,17 @@
+import RPi.GPIO as GPIO
+import time
+
+import patterns as p
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+
+pinlist = [13,19,26,20,21]
+
+
+#SETUP PINS
+for i in pinlist:
+    GPIO.setup(i, GPIO.OUT)
+    GPIO.output(i, GPIO.HIGH)
+
+p.cascade(pinlist)
