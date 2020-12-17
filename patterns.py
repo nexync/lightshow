@@ -4,6 +4,14 @@ import time
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
+def off(pinlist):
+    for i in pinlist:
+        GPIO.output(i,GPIO.LOW)
+
+def on(pinlist):
+    for i in pinlist:
+        GPIO.output(i,GPIO.HIGH)
+
 def cascade(pinlist,onDelay,offDelay):
     for i in pinlist:
         GPIO.output(i, GPIO.HIGH)
