@@ -21,7 +21,7 @@ for i in pinlist:
 p.off(pinlist)                 #set all lights to off initially
 
 try:
-    m.sleigh()
+    m.sleigh(1)
     for i in range(10):
         p.cascade(pinlist,0.25,0.1)
         time.sleep(0.5)
