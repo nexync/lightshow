@@ -28,6 +28,7 @@ try:
         p.blink(pinlist,0.5)
         time.sleep(0.5)
         p.stairup(pinlist,0.1,0.5)
+        time.sleep(0.25)
         p.stairdown(pinlist,0.1,0.5)
         time.sleep(1)
         p.alternate(pinlist,0.3)
