@@ -15,5 +15,18 @@ for i in pinlist:
     GPIO.output(i, GPIO.LOW)
 
 
-p.cascade(pinlist,3,1)
-#GPIO.cleanup()
+#ACTIONS 
+try:
+    for i in range(10):
+        p.cascade(pinlist,1,0.5)
+        time.sleep(0.5)
+    GPIO.cleanup()
+
+
+#Clean Quit from program - resets all lights
+except KeyboardInterrupt:
+    print("Quit")
+
+    # Reset GPIO settings
+
+    GPIO.cleanup()
