@@ -35,7 +35,7 @@ def stairdown(pinlist,stairDelay,offDelay):
         GPIO.output(i, GPIO.HIGH)
         time.sleep(stairDelay)
     time.sleep(offDelay)
-    for i in pinlist:
+    for i in reversed(pinlist):
         GPIO.output(i, GPIO.LOW)
         if i != pinlist[0]:
             time.sleep(stairDelay)
