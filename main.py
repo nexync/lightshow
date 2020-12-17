@@ -20,12 +20,17 @@ for i in pinlist:
 #ACTIONS 
 p.off(pinlist)                 #set all lights to off initially
 
-m.sleigh()
-
 try:
+    m.sleigh()
     for i in range(10):
         p.cascade(pinlist,0.25,0.1)
         time.sleep(0.5)
+        p.blink(pinlist,0.5)
+        time.sleep(0.5)
+        p.stairup(pinlist,0.1,0.5)
+        p.stairdown(pinlist,0.1,0.5)
+        time.sleep(1)
+        p.alternate(pinlist,0.3)
     GPIO.cleanup()
 
 
