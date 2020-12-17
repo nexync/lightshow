@@ -50,17 +50,17 @@ def blink(pinlist,delay):
 def alternate(pinlist,switchDelay):
     for i in range(len(pinlist)):
         if i % 2 == 0:
-            GPIO.output(i,GPIO.HIGH)
+            GPIO.output(pinlist[i],GPIO.HIGH)
     time.sleep(switchDelay)
     for i in range(len(pinlist)):
         if i % 2 == 1:
-            GPIO.output(i,GPIO.HIGH)
+            GPIO.output(pinlist[i],GPIO.HIGH)
         if i % 2 == 0:
-            GPIO.output(i,GPIO.LOW)
+            GPIO.output(pinlist[i],GPIO.LOW)
     time.sleep(switchDelay)
     for i in range(len(pinlist)):
         if i % 2 == 1:
-            GPIO.output(i,GPIO.LOW)
+            GPIO.output(pinlist[i],GPIO.LOW)
 
 
 def random(pinlist,delay):
