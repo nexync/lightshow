@@ -1,7 +1,9 @@
 import RPi.GPIO as GPIO
 import time
+import pygame
 
 import patterns as p
+import music as m
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
@@ -17,6 +19,8 @@ for i in pinlist:
 
 #ACTIONS 
 p.off(pinlist)                 #set all lights to off initially
+
+m.sleigh()
 
 try:
     for i in range(10):
