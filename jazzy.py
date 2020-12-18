@@ -40,10 +40,12 @@ try:
         p.alternate(pinlist, 0.635)
     for i in range (2):
         p.cascade(pinlist,0.2,0.1)
-    for i in range(2):
-        p.closein(pinlist, 0.5, 0.15)
-        p.alternate(pinlist, 0.5)
-    time.sleep(0.2)
+    p.closein(pinlist, 0.5, 0.1)
+    p.alternate(pinlist, 0.5)
+    p.closein(pinlist, 0.5, 0.1)
+    for i in range (3):
+        p.blink(pinlist, 0.3)
+        time.sleep(0.2)
     for i in range(2):
         p.alternate(pinlist, 0.5)
     GPIO.output(pinlist[4], GPIO.HIGH)
@@ -55,9 +57,7 @@ try:
     GPIO.output(pinlist[1],GPIO.HIGH)
     time.sleep(0.05)
     GPIO.output(pinlist[0],GPIO.HIGH)
-    for i in range (3):
-        p.blink(pinlist, 0.3)
-        time.sleep(0.2)
+    
     p.stairup(pinlist, 0.2, 0.5)
     p.stairdown(pinlist, 0.2, 0.5)
 
