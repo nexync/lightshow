@@ -33,7 +33,7 @@ try:
     GPIO.output(pinlist[0],GPIO.LOW)
     p.blink(pinlist, 1.35)
     for i in range(8):
-        p.flashb3(pinlist, 0.20, 0.05)
+        p.switchsides(pinlist, 0.20)
     GPIO.cleanup()
 
 

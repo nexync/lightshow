@@ -96,7 +96,7 @@ def flashb3(pinlist, timeon, timeoff):
 
 
 
-def switchsides(pinlist,time):
+def switchsides(pinlist,timeon):
     GPIO.output(pinlist[3],GPIO.LOW)
     GPIO.output(pinlist[4],GPIO.LOW)
     GPIO.output(pinlist[0], GPIO.HIGH)
@@ -108,4 +108,4 @@ def switchsides(pinlist,time):
     GPIO.output(pinlist[2],GPIO.LOW)
     GPIO.output(pinlist[3],GPIO.HIGH)
     GPIO.output(pinlist[4],GPIO.HIGH)
-    time.sleep(timeoff)
+    time.sleep(timeon)
