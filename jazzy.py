@@ -43,9 +43,18 @@ try:
     for i in range(2):
         p.closein(pinlist, 0.75, 0.2)
         p.alternate(pinlist, 0.35)
-    
-    # for i in range(3):
-    #     p.blink(pinlist,0.2)
+    p.blink(pinlist,0.2)
+    GPIO.output(pinlist[5], GPIO.HIGH)
+    time.sleep(0.1)
+    GPIO.output(pinlist[4], GPIO.HIGH)
+    time.sleep(0.1)
+    GPIO.output(pinlist[3], GPIO.HIGH)
+    time.sleep(0.1)
+    GPIO.output(pinlist[3],GPIO.LOW)
+    time.sleep(0.1)
+    GPIO.output(pinlist[4],GPIO.LOW)
+    p.blink(pinlist,0.2)
+
 
 
 
