@@ -18,6 +18,7 @@ p.off(pinlist)
 
 try:
     m.sleigh(1)
+    p.alternate(pinlist, 2)
     for i in range(10):
         p.cascade(pinlist,0.25,0.1)
         time.sleep(0.5)
