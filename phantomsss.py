@@ -27,7 +27,7 @@ try:
     p.stairup(pinlist, 0.25, 0.1)
     GPIO.output(pinlist[0],GPIO.LOW)
     for i in range(2):
-        p.cascade(pinlist,0.25, 0.1)
+        p.cascade(pinlist,0.25, 0.01)
     GPIO.cleanup()
 
 
