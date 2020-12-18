@@ -17,7 +17,7 @@ for i in pinlist:
 p.off(pinlist)  
 
 try:
-    m.phant(1)
+    m.phantom(1)
     # first 15 seconds
     for i in range(4):
         p.alternate(pinlist, 0.635)
