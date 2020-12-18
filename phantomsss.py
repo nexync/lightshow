@@ -19,7 +19,7 @@ p.off(pinlist)
 try:
     m.phantom(1)
     for i in range(4):
-        p.alternate(0.5)
+        p.alternate(pinlist, 0.5)
     p.blink(pinlist, 2)
     p.stairup(pinlist, 0.2, 0.1)
     p.stairdown(pinlist, 0.2, 0.1)
