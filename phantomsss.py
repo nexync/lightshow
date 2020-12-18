@@ -31,9 +31,9 @@ try:
     for i in range(1):
         p.stairup(pinlist, 0.35, 0.1)
     GPIO.output(pinlist[0],GPIO.LOW)
-    p.blink(pinlist, 1)
+    p.blink(pinlist, 1.35)
     for i in range(8):
-        p.flashb3(pinlist, 0.20, 0.01)
+        p.flashb3(pinlist, 0.20, 0.05)
     GPIO.cleanup()
 
 
