@@ -25,7 +25,7 @@ try:
     p.blink(pinlist, 0.75)
     time.sleep(0.2)
     for i in range(3):
-        p.blink(0.2)
+        p.blink(pinlist, 0.2)
     # p.cascade(pinlist,0.25,0.1)
     # for i in range(3):
     #     p.blink(pinlist,0.2)
