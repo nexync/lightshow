@@ -20,21 +20,26 @@ try:
     m.sleigh(1)
     for i in range(4):
         p.alternate(pinlist, 0.635)
-    p.blink(pinlist, 0.6)
-    p.cascade(pinlist,0.25,0.1)
-    p.cascade(pinlist,0.25,0.1)
-    for i in range(3):
-        p.blink(pinlist,0.2)
-    for i in range(10):
-        p.cascade(pinlist,0.25,0.1)
-        time.sleep(0.5)
-        p.blink(pinlist,0.5)
-        time.sleep(0.5)
-        p.stairup(pinlist,0.1,0.5)
-        time.sleep(0.25)
-        p.stairdown(pinlist,0.1,0.5)
-        time.sleep(1)
-        p.alternate(pinlist,0.3)
+    for i in range(4):
+        p.blink(pinlist, 0.6)
+        p.cascade(pinlist,0.15,0.1)
+    # p.cascade(pinlist,0.25,0.1)
+    # for i in range(3):
+    #     p.blink(pinlist,0.2)
+
+
+
+
+    # for i in range(10):
+    #     p.cascade(pinlist,0.25,0.1)
+    #     time.sleep(0.5)
+    #     p.blink(pinlist,0.5)
+    #     time.sleep(0.5)
+    #     p.stairup(pinlist,0.1,0.5)
+    #     time.sleep(0.25)
+    #     p.stairdown(pinlist,0.1,0.5)
+    #     time.sleep(1)
+    #     p.alternate(pinlist,0.3)
     GPIO.cleanup()
 
 
