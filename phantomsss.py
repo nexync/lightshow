@@ -17,11 +17,11 @@ for i in pinlist:
 p.off(pinlist)  
 
 try:
-    m.phantom(1)
-    for i in range(3):
+    m.phantom(0)
+    for i in range(4):
         p.alternate(pinlist, 0.5)
     time.sleep(0.5)
-    p.blink(pinlist, 2.2)
+    p.blink(pinlist, 2.5)
     p.stairdown(pinlist, 0.25, 0.1)
     p.stairup(pinlist, 0.25, 0.1)
 
