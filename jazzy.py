@@ -44,6 +44,8 @@ try:
         p.closein(pinlist, 0.75, 0.2)
         p.alternate(pinlist, 0.35)
     p.blink(pinlist,0.2)
+    for i in range(2):
+        p.alternate(pinlist, 0.3)
     GPIO.output(pinlist[4], GPIO.HIGH)
     time.sleep(0.25)
     GPIO.output(pinlist[3], GPIO.HIGH)
