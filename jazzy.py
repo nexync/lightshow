@@ -18,7 +18,6 @@ p.off(pinlist)
 
 try:
     m.sleigh(1)
-    p.closein(pinlist, 0.5, 0.2)
     for i in range(4):
         p.alternate(pinlist, 0.635)
     p.blink(pinlist, 0.75)
@@ -45,6 +44,7 @@ try:
         time.sleep(0.15)
         p.blink(pinlist, 0.30)
         time.sleep(0.15)
+    p.closein(pinlist, 0.75, 0.2)
     
     # for i in range(3):
     #     p.blink(pinlist,0.2)
