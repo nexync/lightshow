@@ -23,3 +23,14 @@ try:
     p.blink(pinlist, 2)
     p.stairup(pinlist, 0.2, 0.1)
     p.stairdown(pinlist, 0.2, 0.1)
+
+    GPIO.cleanup()
+
+
+#Clean Quit from program - resets all lights
+except KeyboardInterrupt:
+    print("Quit")
+
+    # Reset GPIO settings
+
+    GPIO.cleanup()
