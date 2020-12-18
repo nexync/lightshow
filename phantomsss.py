@@ -28,7 +28,7 @@ try:
     GPIO.output(pinlist[0],GPIO.LOW)
     for i in range(2):
         p.cascade(pinlist,0.23, 0.01)
-     p.stairup(pinlist, 0.23, 0.1)
+    p.stairup(pinlist, 0.23, 0.1)
     GPIO.output(pinlist[0],GPIO.LOW)
     for i in range(8):
         p.flashb3(pinlist, 0.2, 0.1)
