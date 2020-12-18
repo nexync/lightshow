@@ -32,8 +32,8 @@ try:
         p.stairup(pinlist, 0.35, 0.1)
     GPIO.output(pinlist[0],GPIO.LOW)
     p.blink(pinlist, 1.8)
-    for i in range(8):
-        p.switchsides(pinlist, 0.225)
+    for i in range(12):
+        p.switchsides(pinlist, 0.2225)
     GPIO.cleanup()
 
 
