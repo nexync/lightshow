@@ -23,10 +23,10 @@ try:
     p.blink(pinlist, 0.75)
     p.cascade(pinlist,0.25,0.1)
     p.blink(pinlist, 0.75)
-    time.sleep(0.2)
+    time.sleep(0.4)
     for i in range(3):
         p.blink(pinlist, 0.2)
-        time.sleep(0.05)
+        time.sleep(0.10)
     # p.cascade(pinlist,0.25,0.1)
     # for i in range(3):
     #     p.blink(pinlist,0.2)
