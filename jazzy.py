@@ -28,14 +28,14 @@ try:
     # for i in range(3):
     #     p.blink(pinlist, 0.2)
     #     time.sleep(0.10)
-    time.sleep(0.5)
-    p.stairup(pinlist,0.1,0.5)
-    time.sleep(0.5)
-    p.stairdown(pinlist,0.1,0.5)
-    time.sleep(0.32)
-    for i in range(3):
-        p.blink(pinlist, 0.2)
-        time.sleep(0.10)
+    # time.sleep(0.5)
+    # p.stairup(pinlist,0.1,0.5)
+    # time.sleep(0.5)
+    # p.stairdown(pinlist,0.1,0.5)
+    # time.sleep(0.32)
+    # for i in range(3):
+    #     p.blink(pinlist, 0.2)
+    #     time.sleep(0.10)
     for i in range(2):
         p.alternate(pinlist, 0.635)
     for i in range (2):
