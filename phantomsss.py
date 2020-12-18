@@ -23,7 +23,7 @@ try:
     p.blink(pinlist, 2.75)
     p.stairdown(pinlist, 0.25, 0.1)
     GPIO.output(pinlist[4],GPIO.LOW)
-    time.sleep(1.5)
+    time.sleep(1.35)
     p.stairup(pinlist, 0.25, 0.1)
     GPIO.output(pinlist[0],GPIO.LOW)
 
