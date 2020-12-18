@@ -19,9 +19,8 @@ p.off(pinlist)
 try:
     m.phantom(0)
     for i in range(4):
-        p.alternate(pinlist, 0.3)
-        time.sleep(0.2)
-    time.sleep(0.5)
+        p.alternate(pinlist, 0.45)
+    time.sleep(0.65)
     p.blink(pinlist, 2.75)
     p.stairdown(pinlist, 0.25, 0.1)
     p.stairup(pinlist, 0.25, 0.1)
