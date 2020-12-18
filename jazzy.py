@@ -45,15 +45,15 @@ try:
         p.alternate(pinlist, 0.35)
     p.blink(pinlist,0.2)
     GPIO.output(pinlist[4], GPIO.HIGH)
-    time.sleep(0.1)
+    time.sleep(0.25)
     GPIO.output(pinlist[3], GPIO.HIGH)
-    time.sleep(0.1)
+    time.sleep(0.25)
     GPIO.output(pinlist[2], GPIO.HIGH)
-    time.sleep(0.1)
+    time.sleep(0.25)
     GPIO.output(pinlist[2],GPIO.LOW)
-    time.sleep(0.1)
+    time.sleep(0.25)
     GPIO.output(pinlist[3],GPIO.LOW)
-    p.blink(pinlist,0.2)
+    p.blink(pinlist,0.5)
 
 
 
