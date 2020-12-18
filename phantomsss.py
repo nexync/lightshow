@@ -17,7 +17,7 @@ for i in pinlist:
 p.off(pinlist)  
 
 try:
-    m.phantoms(1)
+    m.phantom(1)
     for i in range(4):
         p.alternate(0.5)
     p.blink(pinlist, 2)
