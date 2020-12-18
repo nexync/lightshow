@@ -18,11 +18,11 @@ p.off(pinlist)
 
 try:
     m.phantom(1)
-    for i in range(4):
+    for i in range(3):
         p.alternate(pinlist, 0.5)
     p.blink(pinlist, 2.2)
-    p.stairdown(pinlist, 0.45, 0.1)
-    p.stairup(pinlist, 0.45, 0.1)
+    p.stairdown(pinlist, 0.25, 0.1)
+    p.stairup(pinlist, 0.25, 0.1)
 
     GPIO.cleanup()
 
