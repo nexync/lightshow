@@ -22,9 +22,9 @@ try:
         p.alternate(pinlist, 0.45)
     p.blink(pinlist, 2.75)
     p.stairdown(pinlist, 0.25, 0.1)
-    GPIO.output(pinlist[4],GPIO.LOW)
-    p.stairup(pinlist, 0.25, 0.1)
     GPIO.output(pinlist[0],GPIO.LOW)
+    p.stairup(pinlist, 0.25, 0.1)
+    GPIO.output(pinlist[4],GPIO.LOW)
 
     GPIO.cleanup()
 
