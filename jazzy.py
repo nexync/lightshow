@@ -32,7 +32,7 @@ try:
     time.sleep(0.5)
     p.stairdown(pinlist,0.1,0.5)
     time.sleep(0.32)
-    for i in range(4):
+    for i in range(3):
         p.blink(pinlist, 0.2)
         time.sleep(0.10)
     for i in range(2):
@@ -40,9 +40,9 @@ try:
     for i in range (4):
         p.cascade(pinlist,0.25,0.1)
     for i in range(2):
-        p.blink(0.65)
+        p.blink(pinlist, 0.65)
         time.sleep(0.15)
-        p.blink(0.30)
+        p.blink(pinlist, 0.30)
         time.sleep(0.15)
     # for i in range(3):
     #     p.blink(pinlist,0.2)
