@@ -44,7 +44,7 @@ try:
     p.alternate(pinlist, 0.35)
     p.closein(pinlist, 0.5, 0.1)
     time.sleep(0.35)
-    for i in range (3):
+    for i in range (4):
         p.blink(pinlist, 0.25)
         time.sleep(0.1)
     for i in range(3):
