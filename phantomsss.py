@@ -20,7 +20,7 @@ try:
     m.phantom(0)
     for i in range(5):
         p.alternate(pinlist, 0.45)
-    time.sleep(0.5)
+    time.sleep(0.15)
     p.blink(pinlist, 2.75)
     p.stairdown(pinlist, 0.25, 0.1)
     p.stairup(pinlist, 0.25, 0.1)
