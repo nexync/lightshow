@@ -37,15 +37,16 @@ try:
         time.sleep(0.10)
     for i in range(2):
         p.alternate(pinlist, 0.635)
-    for i in range (4):
+    for i in range (2):
         p.cascade(pinlist,0.20,0.1)
     for i in range(2):
         p.blink(pinlist, 0.65)
         time.sleep(0.15)
         p.blink(pinlist, 0.30)
         time.sleep(0.15)
-    p.closein(pinlist, 0.75, 0.2)
-    p.alternate(pinlist, 0.35)
+    for i in range(2):
+        p.closein(pinlist, 0.75, 0.2)
+        p.alternate(pinlist, 0.35)
     
     # for i in range(3):
     #     p.blink(pinlist,0.2)
