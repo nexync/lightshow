@@ -39,13 +39,13 @@ try:
     for i in range(2):
         p.alternate(pinlist, 0.635)
     for i in range (2):
-        p.cascade(pinlist,0.20,0.1)
+        p.cascade(pinlist,0.35,0.1)
     for i in range(2):
-        p.closein(pinlist, 0.75, 0.2)
-        p.alternate(pinlist, 0.35)
+        p.closein(pinlist, , 0.5)
+        p.alternate(pinlist, 0.5)
     p.blink(pinlist,0.2)
     for i in range(2):
-        p.alternate(pinlist, 0.3)
+        p.alternate(pinlist, 0.5)
     GPIO.output(pinlist[4], GPIO.HIGH)
     time.sleep(0.25)
     GPIO.output(pinlist[3], GPIO.HIGH)
