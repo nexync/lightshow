@@ -18,7 +18,7 @@ p.off(pinlist)
 
 try:
     m.sleigh(1)
-    first 15 seconds
+    # first 15 seconds
     for i in range(4):
         p.alternate(pinlist, 0.635)
     p.blink(pinlist, 0.75)
