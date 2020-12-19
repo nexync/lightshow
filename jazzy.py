@@ -78,7 +78,7 @@ try:
     for i in range(3):
         p.cascade(pinlist, 0.2, 0.1)
     for i in range(2):
-    p.closein(pinlist, 0.35, 0.1)
+        p.closein(pinlist, 0.35, 0.1)
 
     # for i in range(10):
     #     p.cascade(pinlist,0.25,0.1)
