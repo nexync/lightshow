@@ -36,17 +36,17 @@ try:
     # for i in range(3):
     #     p.blink(pinlist, 0.2)
     #     time.sleep(0.10)
-    # for i in range(2):
-    #     p.alternate(pinlist, 0.635)
-    # for i in range (2):
-    #     p.cascade(pinlist,0.2,0.1)
-    # p.closein(pinlist, 0.35, 0.1)
-    # p.alternate(pinlist, 0.35)
-    # p.closein(pinlist, 0.5, 0.1)
-    # time.sleep(0.35)
-    # for i in range (4):
-    #     p.blink(pinlist, 0.25)
-    #     time.sleep(0.1)
+    for i in range(2):
+        p.alternate(pinlist, 0.635)
+    for i in range (2):
+        p.cascade(pinlist,0.2,0.1)
+    p.closein(pinlist, 0.35, 0.1)
+    p.alternate(pinlist, 0.35)
+    p.closein(pinlist, 0.5, 0.1)
+    time.sleep(0.35)
+    for i in range (4):
+        p.blink(pinlist, 0.25)
+        time.sleep(0.1)
     for i in range(2):
         p.alternate(pinlist, 0.65)
     GPIO.output(pinlist[4], GPIO.HIGH)
