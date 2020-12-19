@@ -17,7 +17,7 @@ for i in pinlist:
 p.off(pinlist)  
 
 try:
-    m.sleigh(15.3)
+    m.sleigh(29.91)
     # first 15 seconds
     # for i in range(4):
     #     p.alternate(pinlist, 0.635)
@@ -36,28 +36,28 @@ try:
     # for i in range(3):
     #     p.blink(pinlist, 0.2)
     #     time.sleep(0.10)
-    for i in range(2):
-        p.alternate(pinlist, 0.635)
-    for i in range (2):
-        p.cascade(pinlist,0.2,0.1)
-    p.closein(pinlist, 0.35, 0.1)
-    p.alternate(pinlist, 0.35)
-    p.closein(pinlist, 0.5, 0.1)
-    time.sleep(0.35)
-    for i in range (4):
-        p.blink(pinlist, 0.25)
-        time.sleep(0.1)
-    for i in range(2):
-        p.alternate(pinlist, 0.65)
-    GPIO.output(pinlist[4], GPIO.HIGH)
-    time.sleep(0.25)
-    GPIO.output(pinlist[3], GPIO.HIGH)
-    time.sleep(0.65)
-    GPIO.output(pinlist[2], GPIO.HIGH)
-    time.sleep(0.45)
-    GPIO.output(pinlist[1],GPIO.HIGH)
-    time.sleep(0.05)
-    GPIO.output(pinlist[0],GPIO.HIGH)
+    # for i in range(2):
+    #     p.alternate(pinlist, 0.635)
+    # for i in range (2):
+    #     p.cascade(pinlist,0.2,0.1)
+    # p.closein(pinlist, 0.35, 0.1)
+    # p.alternate(pinlist, 0.35)
+    # p.closein(pinlist, 0.5, 0.1)
+    # time.sleep(0.35)
+    # for i in range (4):
+    #     p.blink(pinlist, 0.25)
+    #     time.sleep(0.1)
+    # for i in range(2):
+    #     p.alternate(pinlist, 0.65)
+    # GPIO.output(pinlist[4], GPIO.HIGH)
+    # time.sleep(0.25)
+    # GPIO.output(pinlist[3], GPIO.HIGH)
+    # time.sleep(0.65)
+    # GPIO.output(pinlist[2], GPIO.HIGH)
+    # time.sleep(0.45)
+    # GPIO.output(pinlist[1],GPIO.HIGH)
+    # time.sleep(0.05)
+    # GPIO.output(pinlist[0],GPIO.HIGH)
     
     p.stairup(pinlist, 0.20, 0.15)
     GPIO.output(pinlist[0], GPIO.LOW)
@@ -72,6 +72,7 @@ try:
     for i in range(2):
         p.blink(pinlist, 0.3)
         time.sleep(0.1)
+    time.sleep(0.5)
     for i in range(5):
         p.alternate(pinlist,0.3)
 
