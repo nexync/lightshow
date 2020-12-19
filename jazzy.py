@@ -87,7 +87,7 @@ try:
         p.cascade(pinlist, 0.2, 0.1)
     for i in range(1):
         p.closein(pinlist, 0.35, 0.1)
-    time.sleep(0.5)
+    time.sleep(0.05)
     for i in range(3):
         p.blink(pinlist, 0.2)
         time.sleep(0.10)
