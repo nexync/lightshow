@@ -75,9 +75,9 @@ try:
     time.sleep(0.5)
     for i in range(4):
         p.alternate(pinlist,0.3)
-    for i in range(3):
-        p.cascade(pinlist, 0.2, 0.1)
     for i in range(2):
+        p.cascade(pinlist, 0.2, 0.1)
+    for i in range(3):
         p.closein(pinlist, 0.35, 0.1)
 
     # for i in range(10):
