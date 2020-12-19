@@ -88,12 +88,12 @@ try:
     for i in range(1):
         p.closein(pinlist, 0.35, 0.1)
     time.sleep(0.05)
-    for i in range(3):
+    for i in range(4):
         p.blink(pinlist, 0.2)
         time.sleep(0.10)
     for i in range(4):
         p.switchsides(pinlist, 0.33)
-
+    
 
     # for i in range(10):
     #     p.cascade(pinlist,0.25,0.1)
