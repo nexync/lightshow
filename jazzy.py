@@ -17,7 +17,7 @@ for i in pinlist:
 p.off(pinlist)  
 
 try:
-    m.sleigh(16)
+    m.sleigh(15.3)
     # first 15 seconds
     # for i in range(4):
     #     p.alternate(pinlist, 0.635)
