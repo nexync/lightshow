@@ -59,10 +59,10 @@ try:
     time.sleep(0.05)
     GPIO.output(pinlist[0],GPIO.HIGH)
     
-    p.stairup(pinlist, 0.35, 0.15)
-    GPIO.output(pinlist[0], GPIO.LOW)
-    p.stairdown(pinlist, 0.35, 0.15)
-    GPIO.output(pinlist[4], GPIO.HIGH)
+    p.stairup(pinlist, 0.25, 0.15)
+    GPIO.output(pinlist[4], GPIO.LOW)
+    p.stairdown(pinlist, 0.25, 0.15)
+    GPIO.output(pinlist[0], GPIO.HIGH)
     for i in range(2):
         p.blink(pinlist, 0.3)
         time.sleep(0.1)
