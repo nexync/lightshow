@@ -90,7 +90,7 @@ try:
     time.sleep(0.5)
     for i in range(3):
         p.blink(pinlist, 0.2)
-         time.sleep(0.10)
+        time.sleep(0.10)
     for i in range(4):
         p.switchsides(pinlist, 0.33)
 
