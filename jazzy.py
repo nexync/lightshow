@@ -65,10 +65,13 @@ try:
     p.stairdown(pinlist, 0.10, 0.15)
     GPIO.output(pinlist[0], GPIO.HIGH)
     time.sleep(0.1)
-    for i in range(4):
+    for i in range(2):
         p.blink(pinlist, 0.3)
         time.sleep(0.1)
-
+    time.sleep(0.2)
+    for i in range(2):
+        p.blink(pinlist, 0.3)
+        time.sleep(0.1)
 
 
     # for i in range(10):
