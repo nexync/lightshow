@@ -59,8 +59,10 @@ try:
     time.sleep(0.05)
     GPIO.output(pinlist[0],GPIO.HIGH)
     
-    p.stairup(pinlist, 0.15, 0.5)
-    p.stairdown(pinlist, 0.15, 0.5)
+    p.stairup(pinlist, 0.35, 0.5)
+    GPIO.output(pinlist[0], GPIO.LOW)
+    p.stairdown(pinlist, 0.35, 0.5)
+    GPIO.output(pinlist[0], GPIO.HIGH)
 
 
 
