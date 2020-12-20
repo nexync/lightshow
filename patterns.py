@@ -82,7 +82,7 @@ def closein(pinlist, timeon, sleeptime):
     time.sleep(timeon)
     GPIO.output(pinlist[2],GPIO.LOW)
 
-def flashb3(pinlist, timeon, timeoff):
+def flashb3(pinlist, timeon):
     GPIO.output(pinlist[3],GPIO.LOW)
     GPIO.output(pinlist[4],GPIO.LOW)
     GPIO.output(pinlist[0], GPIO.HIGH)
@@ -92,7 +92,7 @@ def flashb3(pinlist, timeon, timeoff):
     GPIO.output(pinlist[0],GPIO.LOW)
     GPIO.output(pinlist[1],GPIO.LOW)
     GPIO.output(pinlist[2],GPIO.LOW)
-    time.sleep(timeoff)
+    time.sleep(timeon)
 
 
 
