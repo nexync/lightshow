@@ -41,6 +41,22 @@ try:
     for i in range(4):
         p.collapsein(pinlist, 0.225)
         p.collapseout(pinlist, 0.225)
+    for i in range(2):
+        p.flashb3(pinlist, 0.23)
+        p.buildin(pinlist, 0.23)
+        p.buildout(pinlist,0.23)
+    for i in range(2):
+        p.collapsein(pinlist, 0.225)
+        p.collapseout(pinlist, 0.225)
+    p.stairdown(pinlist, 0.25, 0.1)
+    GPIO.output(pinlist[4],GPIO.LOW)
+    p.stairup(pinlist, 0.23, 0.1)
+    GPIO.output(pinlist[0],GPIO.LOW)
+    for i in range(2):
+        p.cascade(pinlist,0.23, 0.01)
+    for i in range(1):
+        p.stairup(pinlist, 0.35, 0.1)
+    
     GPIO.cleanup()
 
 
