@@ -48,9 +48,9 @@ try:
     for i in range(2):
         p.collapsein(pinlist, 0.225)
         p.collapseout(pinlist, 0.225)
-    p.stairdown(pinlist, 0.25, 0.1)
+    p.cascade(pinlist, 0.25, 0.1)
     GPIO.output(pinlist[4],GPIO.LOW)
-    p.stairup(pinlist, 0.23, 0.1)
+    p.cascade(pinlist, 0.23, 0.1)
     GPIO.output(pinlist[0],GPIO.LOW)
     for i in range(1):
         p.cascade(pinlist,0.23, 0.01)
@@ -59,6 +59,9 @@ try:
     for i in range(3):
         p.blink(pinlist, 0.2)
         time.sleep(0.05)
+    for i in range(2):
+        p.collapsein(pinlist, 0.225)
+        p.collapseout(pinlist, 0.225)
     for i in range(1):
         p.stairup(pinlist, 0.35, 0.1)
     
