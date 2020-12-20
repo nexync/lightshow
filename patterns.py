@@ -134,7 +134,7 @@ def buildout(pinlist,timesleep):
 def collapsein(pinlist, timeon):
     GPIO.output(pinlist[0], GPIO.HIGH)
     GPIO.output(pinlist[4], GPIO.HIGH)
-    time.sleep(timesleep)
+    time.sleep(timeon)
     GPIO.output(pinlist[0], GPIO.LOW)
     GPIO.output(pinlist[4], GPIO.LOW)
     GPIO.output(pinlist[1], GPIO.HIGH)
