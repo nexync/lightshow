@@ -52,8 +52,13 @@ try:
     GPIO.output(pinlist[4],GPIO.LOW)
     p.stairup(pinlist, 0.23, 0.1)
     GPIO.output(pinlist[0],GPIO.LOW)
-    for i in range(2):
+    for i in range(1):
         p.cascade(pinlist,0.23, 0.01)
+    for i in range(4):
+        p.alternate(0.23)
+    p.buildin(0.23)
+    for i in range(3):
+        p.blink(0.23)
     for i in range(1):
         p.stairup(pinlist, 0.35, 0.1)
     
