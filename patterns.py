@@ -109,3 +109,51 @@ def switchsides(pinlist,timeon):
     GPIO.output(pinlist[3],GPIO.HIGH)
     GPIO.output(pinlist[4],GPIO.HIGH)
     time.sleep(timeon)
+
+def buildin(pinlist, timesleep):
+    
+    GPIO.output(pinlist[0], GPIO.HIGH)
+    GPIO.output(pinlist[4], GPIO.HIGH)
+    time.sleep(timesleep)
+    GPIO.output(pinlist[1], GPIO.HIGH)
+    GPIO.output(pinlist[3],GPIO.HIGH)
+    time.sleep(timesleep)
+    GPIO.output(pinlist[2], GPIO.HIGH)
+    time.sleep(timesleep)
+
+def buildout(pinlist,timesleep):
+    GPIO.output(pinlist[2], GPIO.HIGH)
+    time.sleep(timesleep)
+    GPIO.output(pinlist[1], GPIO.HIGH)
+    GPIO.output(pinlist[3],GPIO.HIGH)
+    time.sleep(timesleep)
+    GPIO.output(pinlist[0], GPIO.HIGH)
+    GPIO.output(pinlist[4], GPIO.HIGH)
+    time.sleep(timesleep)
+    
+def collapsein(pinlist, timeon):
+    GPIO.output(pinlist[0], GPIO.HIGH)
+    GPIO.output(pinlist[4], GPIO.HIGH)
+    time.sleep(timesleep)
+    GPIO.output(pinlist[0], GPIO.LOW)
+    GPIO.output(pinlist[4], GPIO.LOW)
+    GPIO.output(pinlist[1], GPIO.HIGH)
+    GPIO.output(pinlist[3],GPIO.HIGH)
+    time.sleep(timesleep)
+    GPIO.output(pinlist[1], GPIO.LOW)
+    GPIO.output(pinlist[3],GPIO.LOW)
+    GPIO.output(pinlist[2], GPIO.HIGH)
+    time.sleep(timesleep)
+
+def collapseout(pinlist,timeon):
+    GPIO.output(pinlist[2], GPIO.HIGH)
+    time.sleep(timesleep)
+    GPIO.output(pinlist[2], GPIO.LOW)
+    GPIO.output(pinlist[1], GPIO.HIGH)
+    GPIO.output(pinlist[3],GPIO.HIGH)
+    time.sleep(timesleep)
+    GPIO.output(pinlist[1], GPIO.LOW)
+    GPIO.output(pinlist[3],GPIO.LOW)
+    GPIO.output(pinlist[4], GPIO.HIGH)
+    GPIO.output(pinlist[0], GPIO.HIGH)
+    time.sleep(timesleep)
