@@ -58,6 +58,7 @@ try:
         p.alternate(pinlist, 0.23)
     for i in range(3):
         p.blink(pinlist, 0.23)
+        time.sleep(0.1)
     for i in range(1):
         p.stairup(pinlist, 0.35, 0.1)
     
