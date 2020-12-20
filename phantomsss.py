@@ -39,8 +39,8 @@ try:
         p.buildin(pinlist, 0.23)
         p.buildout(pinlist,0.23)
     for i in range(4):
-        p.collapsein(pinlist, 0.23)
-        p.collapseout(pinlist, 0.23)
+        p.collapsein(pinlist, 0.225)
+        p.collapseout(pinlist, 0.225)
     GPIO.cleanup()
 
 
