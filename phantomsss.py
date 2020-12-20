@@ -56,7 +56,6 @@ try:
         p.cascade(pinlist,0.23, 0.01)
     for i in range(4):
         p.alternate(pinlist, 0.23)
-    p.buildin(pinlist, 0.23)
     for i in range(3):
         p.blink(pinlist, 0.23)
     for i in range(1):
