@@ -34,11 +34,11 @@ try:
     p.blink(pinlist, 1.8)
     for i in range(12):
         p.switchsides(pinlist, 0.2225)
-    flashb3(0.23)
-    buildin(pinlist, 0.23)
-    buildout(pinlist,0.23)
-    collapsein(pinlist, 0.23)
-    collapseout(0.23)
+    p.flashb3(0.23)
+    p.buildin(pinlist, 0.23)
+    p.buildout(pinlist,0.23)
+    p.collapsein(pinlist, 0.23)
+    p.collapseout(0.23)
     GPIO.cleanup()
 
 
