@@ -152,8 +152,8 @@ try:
     for i in range(5):
         p.switchsides(pinlist, 0.315)
     for i in range(1):
-        p.stairup(pinlist,0.1,0.5)
-        time.sleep(0.25)
+        p.cascade(pinlist,0.31,0.01)
+        time.sleep(0.2)
         p.stairdown(pinlist,0.1,0.5)
         time.sleep(0.25)
     time.sleep(0.25)
@@ -177,7 +177,7 @@ try:
     p.blink(pinlist, 0.3)
     time.sleep(0.05)
     p.blink(pinlist, 0.3)
-    p.cascade(0.2, 0.01)
+    p.cascade(pinlist, 0.2, 0.01)
     
     GPIO.cleanup()
 
