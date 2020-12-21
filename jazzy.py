@@ -74,7 +74,7 @@ try:
         time.sleep(0.1)
     time.sleep(0.5)
     for i in range(4):
-        p.alternate(pinlist,0.3)
+        p.alternate(pinlist,0.32)
     for i in range(2):
         p.cascade(pinlist, 0.25, 0.01)
     for i in range(4):
@@ -82,7 +82,7 @@ try:
     for i in range(4):
         p.switchsides(pinlist, 0.33)
     for i in range(4):
-        p.alternate(pinlist,0.36)
+        p.alternate(pinlist,0.33)
     for i in range(2):
         p.cascade(pinlist, 0.25, 0.1)
     for i in range(1):
