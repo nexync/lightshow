@@ -96,7 +96,7 @@ try:
     for i in range(4):
         p.switchsides(pinlist, 0.25)
     time.sleep(0.5)
-    for i in range(2):
+    for i in range(3):
         p.blink(pinlist, 0.3)
         time.sleep(0.1)
     for i in range(2):
