@@ -79,7 +79,7 @@ try:
         p.alternate(pinlist,0.35)
     for i in range(4):
         p.closein(pinlist, 0.33, 0.01)
-    time.sleep(0.3)
+    time.sleep(0.75)
     for i in range(4):
         p.switchsides(pinlist, 0.3)
     
