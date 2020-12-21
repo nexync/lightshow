@@ -145,12 +145,12 @@ try:
         p.stairdown(pinlist,0.1,0.5)
         time.sleep(0.5)
         p.alternate(pinlist,0.3)
-     for i in range(2):
+    for i in range(2):
         p.buildin(pinlist, 0.31)
         p.collapsein(pinlist, 0.33)
         p.buildout(pinlist,0.31)
     for i in range(5):
-        p.switchsides(pinlist, 0.315S)
+        p.switchsides(pinlist, 0.315)
     GPIO.cleanup()
 
 
