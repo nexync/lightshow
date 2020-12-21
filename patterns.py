@@ -92,7 +92,7 @@ def flashb3(pinlist, timeon):
     GPIO.output(pinlist[0],GPIO.LOW)
     GPIO.output(pinlist[1],GPIO.LOW)
     GPIO.output(pinlist[2],GPIO.LOW)
-    time.sleep(timeon)
+    # time.sleep(timeon)
 
 
 
@@ -119,7 +119,7 @@ def buildin(pinlist, timesleep):
     GPIO.output(pinlist[3],GPIO.HIGH)
     time.sleep(timesleep)
     GPIO.output(pinlist[2], GPIO.HIGH)
-    time.sleep(timesleep)
+    # time.sleep(timesleep)
 
 def buildout(pinlist,timesleep):
     GPIO.output(pinlist[2], GPIO.HIGH)
@@ -129,7 +129,7 @@ def buildout(pinlist,timesleep):
     time.sleep(timesleep)
     GPIO.output(pinlist[0], GPIO.HIGH)
     GPIO.output(pinlist[4], GPIO.HIGH)
-    time.sleep(timesleep)
+    # time.sleep(timesleep)
     
 def collapsein(pinlist, timeon):
     GPIO.output(pinlist[0], GPIO.HIGH)
