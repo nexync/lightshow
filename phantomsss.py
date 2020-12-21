@@ -61,7 +61,7 @@ try:
     for i in range(5):
         p.alternate(pinlist, 0.23)
     
-    for i in range(3):
+    for i in range(6):
         p.blink(pinlist, 0.2)
         time.sleep(0.05)
     time.sleep(0.23)
