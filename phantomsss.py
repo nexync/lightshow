@@ -58,7 +58,7 @@ try:
         p.cascade(pinlist,0.25, 0.1)
     for i in range(4):
         p.alternate(pinlist, 0.23)
-    time.sleep(0.5)
+    time.sleep(1)
     for i in range(3):
         p.blink(pinlist, 0.2)
         time.sleep(0.05)
