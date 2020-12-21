@@ -100,19 +100,19 @@ try:
         p.blink(pinlist, 0.3)
         time.sleep(0.1)
     for i in range(2):
-        p.flashb3(pinlist, 0.2)
-        p.buildin(pinlist, 0.2)
-        p.buildout(pinlist,0.2)
+        p.flashb3(pinlist, 0.33)
+        p.buildin(pinlist, 0.33)
+        p.buildout(pinlist,0.33)
     for i in range(4):
-        p.collapsein(pinlist, 0.2)
-        p.collapseout(pinlist, 0.2)
+        p.collapsein(pinlist, 0.33)
+        p.collapseout(pinlist, 0.33)
     for i in range(3):
-        p.flashb3(pinlist, 0.2)
-        p.buildin(pinlist, 0.2)
-        p.buildout(pinlist,0.2)
+        p.flashb3(pinlist, 0.33)
+        p.buildin(pinlist, 0.33)
+        p.buildout(pinlist,0.33)
     for i in range(3):
-        p.collapsein(pinlist, 0.25)
-        p.collapseout(pinlist, 0.25)
+        p.collapsein(pinlist, 0.33)
+        p.collapseout(pinlist, 0.33)
     # for i in range(10):
     #     p.cascade(pinlist,0.25,0.1)
     #     time.sleep(0.5)
