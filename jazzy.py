@@ -176,8 +176,7 @@ try:
         p.cascade(pinlist,0.31,0.05)
     p.blink(pinlist, 0.3)
     time.sleep(0.05)
-    p.blink(pinlist, 0.3)
-    p.cascade(pinlist, 0.2, 0.01)
+    p.stairdown(pinlist, 0.1, 0.05)
     
     GPIO.cleanup()
 
