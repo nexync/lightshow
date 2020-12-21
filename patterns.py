@@ -123,6 +123,8 @@ def buildin(pinlist, timesleep):
 
 def buildout(pinlist,timesleep):
     GPIO.output(pinlist[2], GPIO.HIGH)
+    time.sleep(0.02)
+    GPIO.output(pinlist[2], GPIO.HIGH)
     time.sleep(timesleep)
     GPIO.output(pinlist[1], GPIO.HIGH)
     GPIO.output(pinlist[3],GPIO.HIGH)
