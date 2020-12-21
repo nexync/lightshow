@@ -78,7 +78,7 @@ try:
     for i in range(3):
         p.alternate(pinlist,0.3)
     for i in range(4):
-        p.closein(pinlist, 0.3, 0.01)
+        p.closein(pinlist, 0.35, 0.01)
     for i in range(4):
         p.switchsides(pinlist, 0.3)
     for i in range(4):
