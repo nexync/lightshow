@@ -60,7 +60,6 @@ try:
         p.cascade(pinlist,0.23, 0.01)
     for i in range(5):
         p.alternate(pinlist, 0.23)
-    
     for i in range(6):
         p.blink(pinlist, 0.2)
         time.sleep(0.05)
