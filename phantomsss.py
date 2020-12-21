@@ -50,17 +50,17 @@ try:
         p.collapseout(pinlist, 0.225)
     GPIO.output(pinlist[4],GPIO.LOW)
     GPIO.output(pinlist[0],GPIO.LOW)
-    p.cascade(pinlist, 0.23, 0.01)
+    p.cascade(pinlist, 0.26, 0.01)
     GPIO.output(pinlist[4],GPIO.LOW)
     GPIO.output(pinlist[0],GPIO.LOW)
-    p.cascade(pinlist, 0.23, 0.01)
+    p.cascade(pinlist, 0.26, 0.01)
     GPIO.output(pinlist[0],GPIO.LOW)
     GPIO.output(pinlist[4],GPIO.LOW)
     for i in range(2):
-        p.cascade(pinlist,0.23, 0.01)
+        p.cascade(pinlist,0.26, 0.01)
     for i in range(5):
         p.alternate(pinlist, 0.23)
-    for i in range(6):
+    for i in range(5):
         p.blink(pinlist, 0.2)
         time.sleep(0.05)
     time.sleep(0.23)
