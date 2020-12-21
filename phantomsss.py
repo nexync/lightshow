@@ -48,6 +48,8 @@ try:
     for i in range(2):
         p.collapsein(pinlist, 0.225)
         p.collapseout(pinlist, 0.225)
+    GPIO.output(pinlist[4],GPIO.LOW)
+    GPIO.output(pinlist[0],GPIO.LOW)
     p.cascade(pinlist, 0.25, 0.075)
     GPIO.output(pinlist[4],GPIO.LOW)
     GPIO.output(pinlist[0],GPIO.LOW)
@@ -62,6 +64,7 @@ try:
     for i in range(3):
         p.blink(pinlist, 0.2)
         time.sleep(0.05)
+    time.sleep(0.23)
     for i in range(2):
         p.collapsein(pinlist, 0.225)
         p.collapseout(pinlist, 0.225)
