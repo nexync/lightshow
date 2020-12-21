@@ -50,10 +50,12 @@ try:
         p.collapseout(pinlist, 0.225)
     p.cascade(pinlist, 0.25, 0.1)
     GPIO.output(pinlist[4],GPIO.LOW)
+    GPIO.output(pinlist[4],GPIO.LOW)
     p.cascade(pinlist, 0.23, 0.1)
     GPIO.output(pinlist[0],GPIO.LOW)
+    GPIO.output(pinlist[4],GPIO.LOW)
     for i in range(1):
-        p.cascade(pinlist,0.23, 0.01)
+        p.cascade(pinlist,0.25, 0.1)
     for i in range(4):
         p.alternate(pinlist, 0.23)
     for i in range(3):
