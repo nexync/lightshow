@@ -141,7 +141,7 @@ try:
     for i in range(4):
         p.cascade(pinlist,0.31,0.05)
         time.sleep(0.5)
-        p.blink(pinlist,0.5)S
+        p.blink(pinlist,0.5)
     GPIO.cleanup()
 
 
