@@ -96,13 +96,13 @@ try:
     for i in range(3):
         p.switchsides(pinlist, 0.32)
     # time.sleep(0.5)
-    for i in range(4):
+    for i in range(5):
         p.blink(pinlist, 0.3)
         time.sleep(0.1)
     for i in range(2):
-        p.flashb3(pinlist, 0.33)
-        p.buildin(pinlist, 0.33)
-        p.buildout(pinlist,0.33)
+        p.flashb3(pinlist, 0.31)
+        p.buildin(pinlist, 0.31)
+        p.buildout(pinlist,0.31)
     for i in range(4):
         p.collapsein(pinlist, 0.33)
         p.collapseout(pinlist, 0.33)
