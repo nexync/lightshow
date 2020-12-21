@@ -107,7 +107,7 @@ try:
     for i in range(2):
         p.collapsein(pinlist, 0.33)
         p.collapseout(pinlist, 0.33)
-    time.sleep(1)
+    time.sleep(0.6)
     for i in range(3):
         p.cascade(pinlist, 0.1, 0.01)
         time.sleep(0.2)
