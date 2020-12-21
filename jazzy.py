@@ -17,7 +17,7 @@ for i in pinlist:
 p.off(pinlist)  
 
 try:
-    m.sleigh(29.8)
+    m.sleigh(56.3)
     # # first 15 seconds
     # for i in range(4):
     #     p.alternate(pinlist, 0.635)
@@ -59,41 +59,42 @@ try:
     # time.sleep(0.05)
     # GPIO.output(pinlist[0],GPIO.HIGH)
     # comment out lines above with time 29.8 for start
-    p.stairup(pinlist, 0.20, 0.15)
-    GPIO.output(pinlist[0], GPIO.LOW)
-    time.sleep(0.1)
-    p.stairdown(pinlist, 0.10, 0.15)
-    GPIO.output(pinlist[4], GPIO.HIGH)
-    time.sleep(0.1)
-    for i in range(2):
-        p.blink(pinlist, 0.3)
-        time.sleep(0.05)
-    time.sleep(0.2)
-    for i in range(2):
-        p.blink(pinlist, 0.3)
-        time.sleep(0.1)
-    time.sleep(0.5)
-    for i in range(2):
-        p.cascade(pinlist, 0.3, 0.01)
-    for i in range(3):
-        p.alternate(pinlist,0.35)
+    # p.stairup(pinlist, 0.20, 0.15)
+    # GPIO.output(pinlist[0], GPIO.LOW)
+    # time.sleep(0.1)
+    # p.stairdown(pinlist, 0.10, 0.15)
+    # GPIO.output(pinlist[4], GPIO.HIGH)
+    # time.sleep(0.1)
+    # for i in range(2):
+    #     p.blink(pinlist, 0.3)
+    #     time.sleep(0.05)
+    # time.sleep(0.2)
+    # for i in range(2):
+    #     p.blink(pinlist, 0.3)
+    #     time.sleep(0.1)
+    # time.sleep(0.5)
+    # for i in range(2):
+    #     p.cascade(pinlist, 0.3, 0.01)
+    # for i in range(3):
+    #     p.alternate(pinlist,0.35)
+    # for i in range(4):
+    #     p.closein(pinlist, 0.33, 0.01)
+    # time.sleep(0.75)
+    # for i in range(4):
+    #     p.switchsides(pinlist, 0.33)
+    # for i in range(4):
+    #     p.alternate(pinlist,0.32)
+    # for i in range(2):
+    #     p.cascade(pinlist, 0.25, 0.1)
+    # for i in range(1):
+    #     p.closein(pinlist, 0.25, 0.1)
+    # time.sleep(0.05)
+    # for i in range(4):
+    #     p.blink(pinlist, 0.2)
+    #     time.sleep(0.10)
+    # comment out lines above with time 
     for i in range(4):
-        p.closein(pinlist, 0.33, 0.01)
-    time.sleep(0.75)
-    for i in range(4):
-        p.switchsides(pinlist, 0.33)
-    for i in range(4):
-        p.alternate(pinlist,0.32)
-    for i in range(2):
-        p.cascade(pinlist, 0.25, 0.1)
-    for i in range(1):
-        p.closein(pinlist, 0.25, 0.1)
-    time.sleep(0.05)
-    for i in range(4):
-        p.blink(pinlist, 0.2)
-        time.sleep(0.10)
-    for i in range(4):
-        p.switchsides(pinlist, 0.33)
+        p.switchsides(pinlist, 0.25)
     time.sleep(0.5)
     for i in range(2):
         p.blink(pinlist, 0.3)
