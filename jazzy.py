@@ -99,6 +99,7 @@ try:
     for i in range(5):
         p.blink(pinlist, 0.3)
         time.sleep(0.1)
+    time.sleep(0.5)
     for i in range(2):
         p.buildin(pinlist, 0.31)
         p.collapsein(pinlist, 0.33)
@@ -112,7 +113,7 @@ try:
     for i in range(3):
         p.collapsein(pinlist, 0.33)
         p.collapseout(pinlist, 0.33)
-    p.stairup(pinlist,0.3,0.5)
+    p.stairup(pinlist,0.3,0.1)
     # time.sleep(0.5)
     # p.stairdown(pinlist,0.1,0.5)
     # time.sleep(0.32)
