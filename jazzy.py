@@ -72,7 +72,7 @@ try:
     for i in range(2):
         p.blink(pinlist, 0.3)
         time.sleep(0.1)
-    p.cascade(pinlist, 0.33)
+    p.cascade(pinlist, 0.33, 0.01)
     for i in range(4):
         p.alternate(pinlist,0.32)
     for i in range(4):
