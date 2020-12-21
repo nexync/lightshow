@@ -134,10 +134,10 @@ try:
         time.sleep(1)
         p.alternate(pinlist,0.3)
     p.cascade(pinlist,0.31,0.05)
-    time.sleep(0.8)
+    time.sleep(1.2)
     for i in range(4):
         p.blink(pinlist,0.2)
-        time.sleep(0.05)
+        time.sleep(0.1)
     for i in range(2):
         p.stairup(pinlist,0.1,0.5)
         time.sleep(0.25)
