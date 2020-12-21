@@ -143,7 +143,7 @@ try:
         p.stairup(pinlist,0.1,0.5)
         time.sleep(0.25)
         p.stairdown(pinlist,0.1,0.5)
-        time.sleep(0.25)
+        time.sleep(0.5)
         p.alternate(pinlist,0.3)
         
     GPIO.cleanup()
