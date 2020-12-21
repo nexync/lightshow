@@ -56,10 +56,8 @@ try:
     GPIO.output(pinlist[4],GPIO.LOW)
     for i in range(1):
         p.cascade(pinlist,0.25, 0.1)
-    p.cascade(pinlist, 0.25, 0.1)
-    for i in range(4):
+    for i in range(6):
         p.alternate(pinlist, 0.23)
-    time.sleep(0.35)
     for i in range(3):
         p.blink(pinlist, 0.2)
         time.sleep(0.05)
