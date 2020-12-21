@@ -108,9 +108,9 @@ try:
         p.collapsein(pinlist, 0.33)
         p.collapseout(pinlist, 0.33)
     time.sleep(0.6)
-    for i in range(3):
+    for i in range(4):
         p.cascade(pinlist, 0.1, 0.01)
-        time.sleep(0.2)
+        time.sleep(0.14)
     for i in range(3):
         p.buildin(pinlist, 0.33)
         p.buildout(pinlist,0.33)
