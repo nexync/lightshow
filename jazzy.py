@@ -104,7 +104,7 @@ try:
         p.buildin(pinlist, 0.31)
         p.collapsein(pinlist, 0.33)
         p.buildout(pinlist,0.31)
-    for i in range(2):
+    for i in range(3):
         p.collapsein(pinlist, 0.33)
         p.collapseout(pinlist, 0.33)
     for i in range(3):
