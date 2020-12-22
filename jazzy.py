@@ -158,7 +158,7 @@ try:
         p.cascade(pinlist,0.31,0.01)
         time.sleep(0.2)
     for i in range(1):
-        p.stairdown(pinlist,0.1,0.5)
+        p.stairdown(pinlist,0.08,0.5)
         time.sleep(0.15)
     time.sleep(0.35)
     for i in range(3):
@@ -181,7 +181,7 @@ try:
         p.cascade(pinlist,0.31,0.05)
     # for i in range(1):
     #     p.blink(pinlist, 0.2)
-    p.stairdown(pinlist, 0.25, 0.04)
+    p.stairdown(pinlist, 0.2, 0.04)
     p.blink(pinlist, 0.2)
     
     GPIO.cleanup()
