@@ -67,7 +67,7 @@ try:
     GPIO.output(pinlist[0],GPIO.LOW)
     GPIO.output(pinlist[4],GPIO.LOW)
     for i in range(2):
-        p.cascade(pinlist,0.25, 0.01)
+        p.cascade(pinlist,0.225, 0.01)
     for i in range(5):
         p.alternate(pinlist, 0.23)
     for i in range(5):
