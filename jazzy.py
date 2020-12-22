@@ -178,7 +178,7 @@ try:
     for i in range(1):
         p.blink(pinlist, 0.3)
     p.stairdown(pinlist, 0.1, 0.01)
-    p.blink(pinlist, 0.3)
+    p.blink(pinlist, 0.25)
     
     GPIO.cleanup()
 
