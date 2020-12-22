@@ -81,12 +81,11 @@ try:
         p.stairdown(pinlist,0.1,0.25)
         time.sleep(0.1)
     p.buildin(pinlist, 0.225)
-    for i in range(2):
+    for i in range(4):
         p.collapsein(pinlist, 0.225)
         time.sleep(0.21)
         p.collapseout(pinlist, 0.225)
         time.sleep(0.21)
-    for i in range(1):
         p.stairup(pinlist, 0.25, 0.01)
     
     GPIO.cleanup()
