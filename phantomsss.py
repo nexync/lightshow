@@ -77,7 +77,9 @@ try:
     time.sleep(0.23)
     for i in range(2):
         p.collapsein(pinlist, 0.225)
+        time.sleep(0.21)
         p.collapseout(pinlist, 0.225)
+        time.sleep(0.21)
     for i in range(1):
         p.stairup(pinlist, 0.35, 0.1)
     
