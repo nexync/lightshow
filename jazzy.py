@@ -116,7 +116,7 @@ try:
     for i in range(1):
         p.buildin(pinlist, 0.33)
         # p.buildout(pinlist,0.33)
-    time.sleep(0.35)
+    # time.sleep(0.35)
     for i in range(8):
         p.alternate(pinlist, 0.33)
     for i in range(3):
