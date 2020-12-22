@@ -37,16 +37,20 @@ try:
     for i in range(4):
         p.flashb3(pinlist, 0.25)
         p.buildin(pinlist, 0.25)
+        time.sleep(0.2)
         p.buildout(pinlist,0.25)
     for i in range(4):
         p.collapsein(pinlist, 0.25)
+        time.sleep(0.23)
         p.collapseout(pinlist, 0.25)
     for i in range(2):
         p.flashb3(pinlist, 0.23)
         p.buildin(pinlist, 0.23)
+        time.sleep(0.23)
         p.buildout(pinlist,0.23)
     for i in range(2):
         p.collapsein(pinlist, 0.225)
+        time.sleep(0.225)
         p.collapseout(pinlist, 0.225)
     GPIO.output(pinlist[4],GPIO.LOW)
     GPIO.output(pinlist[0],GPIO.LOW)
