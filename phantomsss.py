@@ -36,6 +36,7 @@ try:
     #     p.switchsides(pinlist, 0.2225)
     for i in range(4):
         p.flashb3(pinlist, 0.23)
+        time.sleep(0.23)
         p.buildin(pinlist, 0.23)
         time.sleep(0.23)
         p.buildout(pinlist,0.23)
@@ -47,7 +48,8 @@ try:
         time.sleep(0.215)
     for i in range(2):
         p.flashb3(pinlist, 0.23)
-        p.buildin(pinlist, 0.23)
+        time.sleep(0.23)
+        p.buildin(pinlist, 0.25)
         time.sleep(0.23)
         p.buildout(pinlist,0.23)
         time.sleep(0.23)
