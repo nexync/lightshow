@@ -92,7 +92,7 @@ try:
     for i in range(4):
         p.blink(pinlist, 0.2)
         time.sleep(0.10)
-    comment out lines above with time 
+    # comment out lines above with time 
     for i in range(3):
         p.switchsides(pinlist, 0.32)
     # time.sleep(0.5)
