@@ -57,7 +57,7 @@ try:
         p.collapsein(pinlist, 0.225)
         time.sleep(0.2)
         p.collapseout(pinlist, 0.225)
-        time.sleep(0.225)
+        time.sleep(0.2)
     GPIO.output(pinlist[4],GPIO.LOW)
     GPIO.output(pinlist[0],GPIO.LOW)
     p.cascade(pinlist, 0.23, 0.01)
