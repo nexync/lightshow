@@ -138,7 +138,7 @@ try:
     # for i in range(4):
     #     p.blink(pinlist,0.2)
     #     time.sleep(0.1)
-    time.sleep(0.5)
+    # time.sleep(0.5)
     for i in range(2):
         p.stairup(pinlist,0.1,0.5)
         time.sleep(0.25)
