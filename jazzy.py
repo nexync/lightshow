@@ -130,7 +130,7 @@ try:
         p.cascade(pinlist,0.31,0.05)
         time.sleep(0.5)
         p.blink(pinlist,0.5)
-        time.sleep(0.5)
+        time.sleep(0.25)
         p.stairup(pinlist,0.1,0.5)
         time.sleep(0.25)
         p.stairdown(pinlist,0.1,0.5)
