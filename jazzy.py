@@ -157,11 +157,12 @@ try:
         p.stairdown(pinlist,0.1,0.5)
         time.sleep(0.25)
     time.sleep(0.25)
-    for i in range(4):
+    for i in range(3):
         p.stairup(pinlist,0.1,0.25)
         time.sleep(0.1)
         p.stairdown(pinlist,0.1,0.25)
         time.sleep(0.1)
+    p.buildin(pinlist, 0.31)
     for i in range(1):
         p.cascade(pinlist,0.31,0.05)
         time.sleep(0.5)
