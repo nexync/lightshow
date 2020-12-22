@@ -157,7 +157,7 @@ try:
     for i in range(2):
         p.cascade(pinlist,0.31,0.01)
         time.sleep(0.2)
-    for i in range(2):
+    for i in range(1):
         p.stairdown(pinlist,0.1,0.5)
         time.sleep(0.25)
     time.sleep(0.25)
