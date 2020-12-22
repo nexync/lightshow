@@ -100,7 +100,7 @@ try:
     for i in range(5):
         p.blink(pinlist, 0.3)
         time.sleep(0.1)
-    time.sleep(0.5)
+    time.sleep(0.8)
     for i in range(2):
         p.buildin(pinlist, 0.31)
         p.collapsein(pinlist, 0.33)
@@ -108,7 +108,7 @@ try:
     for i in range(2):
         p.collapsein(pinlist, 0.33)
         p.collapseout(pinlist, 0.33)
-    time.sleep(1.0)
+    time.sleep(0.7)
     for i in range(4):
         p.cascade(pinlist, 0.09, 0.01)
         time.sleep(0.14)
@@ -118,7 +118,7 @@ try:
         # p.buildout(pinlist,0.33)
     # time.sleep(0.35)
     for i in range(8):
-        p.alternate(pinlist, 0.33)
+        p.alternate(pinlist, 0.325)
     for i in range(3):
         p.collapsein(pinlist, 0.33)
         p.collapseout(pinlist, 0.33)
