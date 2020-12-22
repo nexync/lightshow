@@ -87,6 +87,7 @@ try:
         p.collapseout(pinlist, 0.225)
         time.sleep(0.21)
         p.stairup(pinlist, 0.225, 0.01)
+        time.sleep(0.1)
     
     GPIO.cleanup()
 
