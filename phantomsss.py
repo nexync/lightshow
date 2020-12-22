@@ -41,10 +41,10 @@ try:
         p.buildout(pinlist,0.23)
         time.sleep(0.23)
     for i in range(4):
-        p.collapsein(pinlist, 0.23)
-        time.sleep(0.23)
-        p.collapseout(pinlist, 0.23)
-        time.sleep(0.23)
+        p.collapsein(pinlist, 0.215)
+        time.sleep(0.215)
+        p.collapseout(pinlist, 0.215)
+        time.sleep(0.215)
     for i in range(2):
         p.flashb3(pinlist, 0.23)
         p.buildin(pinlist, 0.23)
