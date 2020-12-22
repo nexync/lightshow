@@ -177,11 +177,11 @@ try:
         p.stairdown(pinlist,0.1,0.5)
         time.sleep(1)
         p.alternate(pinlist,0.3)
-    for i in range(1):
-        p.cascade(pinlist,0.31,0.05)
+    # for i in range(1):
+    #     p.cascade(pinlist,0.31,0.05)
     # for i in range(1):
     #     p.blink(pinlist, 0.2)
-    p.stairdown(pinlist, 0.2, 0.04)
+    p.stairdown(pinlist, 0.31, 0.04)
     p.blink(pinlist, 0.2)
     
     GPIO.cleanup()
