@@ -87,8 +87,8 @@ try:
     for i in range(2):
         p.cascade(pinlist, 0.25, 0.1)
     for i in range(1):
-        p.closein(pinlist, 0.25, 0.1)
-    time.sleep(0.05)
+        p.closein(pinlist, 0.28, 0.1)
+    time.sleep(0.08)
     for i in range(4):
         p.blink(pinlist, 0.2)
         time.sleep(0.10)
@@ -151,9 +151,10 @@ try:
         p.buildout(pinlist,0.31)
     for i in range(5):
         p.switchsides(pinlist, 0.315)
-    for i in range(1):
+    for i in range(2):
         p.cascade(pinlist,0.31,0.01)
         time.sleep(0.2)
+    for i in range(2):
         p.stairdown(pinlist,0.1,0.5)
         time.sleep(0.25)
     time.sleep(0.25)
