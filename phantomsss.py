@@ -35,16 +35,16 @@ try:
     # for i in range(12):
     #     p.switchsides(pinlist, 0.2225)
     for i in range(4):
-        p.flashb3(pinlist, 0.1)
-        p.buildin(pinlist, 0.1)
-        p.buildout(pinlist,0.1)
+        p.flashb3(pinlist, 0.25)
+        p.buildin(pinlist, 0.25)
+        p.buildout(pinlist,0.25)
     for i in range(4):
-        p.collapsein(pinlist, 0.1)
-        p.collapseout(pinlist, 0.1)
+        p.collapsein(pinlist, 0.25)
+        p.collapseout(pinlist, 0.25)
     for i in range(2):
-        p.flashb3(pinlist, 0.2)
-        p.buildin(pinlist, 0.2)
-        p.buildout(pinlist,0.2)
+        p.flashb3(pinlist, 0.23)
+        p.buildin(pinlist, 0.23)
+        p.buildout(pinlist,0.23)
     for i in range(2):
         p.collapsein(pinlist, 0.225)
         p.collapseout(pinlist, 0.225)
