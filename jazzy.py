@@ -175,7 +175,7 @@ try:
         p.alternate(pinlist,0.3)
     for i in range(1):
         p.cascade(pinlist,0.31,0.05)
-    for i in range(2):
+    for i in range(1):
         p.blink(pinlist, 0.3)
     p.stairdown(pinlist, 0.1, 0.01)
     p.blink(pinlist, 0.3)
