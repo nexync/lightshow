@@ -17,7 +17,7 @@ for i in pinlist:
 p.off(pinlist)  
 
 try:
-    m.phantom(27)
+    m.phantom(56.4)
     # for i in range(5):
     #     p.alternate(pinlist, 0.45)
     # p.blink(pinlist, 2.75)
@@ -34,46 +34,46 @@ try:
     # p.blink(pinlist, 1.8)
     # for i in range(12):
     #     p.switchsides(pinlist, 0.2225)
-    for i in range(4):
-        p.flashb3(pinlist, 0.23)
-        time.sleep(0.23)
-        p.buildin(pinlist, 0.23)
-        time.sleep(0.23)
-        p.buildout(pinlist,0.23)
-        time.sleep(0.23)
-    for i in range(4):
-        p.collapsein(pinlist, 0.225)
-        time.sleep(0.215)
-        p.collapseout(pinlist, 0.225)
-        time.sleep(0.215)
-    for i in range(2):
-        p.flashb3(pinlist, 0.23)
-        time.sleep(0.23)
-        p.buildin(pinlist, 0.25)
-        time.sleep(0.23)
-        p.buildout(pinlist,0.23)
-        time.sleep(0.23)
-    for i in range(2):
-        p.collapsein(pinlist, 0.225)
-        time.sleep(0.21)
-        p.collapseout(pinlist, 0.225)
-        time.sleep(0.21)
-    GPIO.output(pinlist[4],GPIO.LOW)
-    GPIO.output(pinlist[0],GPIO.LOW)
-    p.cascade(pinlist, 0.23, 0.01)
-    GPIO.output(pinlist[4],GPIO.LOW)
-    GPIO.output(pinlist[0],GPIO.LOW)
-    p.cascade(pinlist, 0.23, 0.01)
-    GPIO.output(pinlist[0],GPIO.LOW)
-    GPIO.output(pinlist[4],GPIO.LOW)
-    time.sleep(0.23)
-    for i in range(2):
-        p.cascade(pinlist,0.225, 0.01)
-    for i in range(5):
-        p.alternate(pinlist, 0.23)
-    for i in range(5):
-        p.blink(pinlist, 0.2)
-        time.sleep(0.05)
+    # for i in range(4):
+    #     p.flashb3(pinlist, 0.23)
+    #     time.sleep(0.23)
+    #     p.buildin(pinlist, 0.23)
+    #     time.sleep(0.23)
+    #     p.buildout(pinlist,0.23)
+    #     time.sleep(0.23)
+    # for i in range(4):
+    #     p.collapsein(pinlist, 0.225)
+    #     time.sleep(0.215)
+    #     p.collapseout(pinlist, 0.225)
+    #     time.sleep(0.215)
+    # for i in range(2):
+    #     p.flashb3(pinlist, 0.23)
+    #     time.sleep(0.23)
+    #     p.buildin(pinlist, 0.25)
+    #     time.sleep(0.23)
+    #     p.buildout(pinlist,0.23)
+    #     time.sleep(0.23)
+    # for i in range(2):
+    #     p.collapsein(pinlist, 0.225)
+    #     time.sleep(0.21)
+    #     p.collapseout(pinlist, 0.225)
+    #     time.sleep(0.21)
+    # GPIO.output(pinlist[4],GPIO.LOW)
+    # GPIO.output(pinlist[0],GPIO.LOW)
+    # p.cascade(pinlist, 0.23, 0.01)
+    # GPIO.output(pinlist[4],GPIO.LOW)
+    # GPIO.output(pinlist[0],GPIO.LOW)
+    # p.cascade(pinlist, 0.23, 0.01)
+    # GPIO.output(pinlist[0],GPIO.LOW)
+    # GPIO.output(pinlist[4],GPIO.LOW)
+    # time.sleep(0.23)
+    # for i in range(2):
+    #     p.cascade(pinlist,0.225, 0.01)
+    # for i in range(5):
+    #     p.alternate(pinlist, 0.23)
+    # for i in range(5):
+    #     p.blink(pinlist, 0.2)
+    #     time.sleep(0.05)
     time.sleep(0.46)
     for i in range(2):
         p.collapsein(pinlist, 0.225)
