@@ -118,7 +118,7 @@ try:
         # p.buildout(pinlist,0.33)
     time.sleep(0.35)
     for i in range(8):
-        p.alternate(pinlist, 0.315)
+        p.alternate(pinlist, 0.33)
     for i in range(3):
         p.collapsein(pinlist, 0.33)
         p.collapseout(pinlist, 0.33)
