@@ -76,6 +76,12 @@ try:
     #     time.sleep(0.05)
     time.sleep(0.46)
     for i in range(2):
+        p.stairup(pinlist,0.1,0.25)
+        time.sleep(0.1)
+        p.stairdown(pinlist,0.1,0.25)
+        time.sleep(0.1)
+    p.buildin(pinlist, 0.225)
+    for i in range(2):
         p.collapsein(pinlist, 0.225)
         time.sleep(0.21)
         p.collapseout(pinlist, 0.225)
