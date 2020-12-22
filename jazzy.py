@@ -112,10 +112,11 @@ try:
     for i in range(4):
         p.cascade(pinlist, 0.09, 0.01)
         time.sleep(0.14)
-    time.sleep(0.3)
+    time.sleep(0.35)
     for i in range(1):
         p.buildin(pinlist, 0.33)
         # p.buildout(pinlist,0.33)
+    time.sleep(0.35)
     for i in range(8):
         p.alternate(pinlist, 0.315)
     for i in range(3):
