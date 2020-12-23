@@ -109,6 +109,8 @@ try:
         p.collapsein(pinlist, 0.33)
         p.collapseout(pinlist, 0.33)
     time.sleep(0.7)
+    GPIO.output(pinlist[0], GPIO.LOW)
+    GPIO.output(pinlist[4], GPIO.LOW)
     for i in range(4):
         p.cascade(pinlist, 0.09, 0.01)
         time.sleep(0.14)
