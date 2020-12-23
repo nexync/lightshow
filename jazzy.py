@@ -58,7 +58,7 @@ try:
     GPIO.output(pinlist[1],GPIO.HIGH)
     time.sleep(0.05)
     GPIO.output(pinlist[0],GPIO.HIGH)
-    comment out lines above with time 29.8 for start
+    # comment out lines above with time 29.8 for start
     p.stairup(pinlist, 0.20, 0.15)
     GPIO.output(pinlist[0], GPIO.LOW)
     time.sleep(0.1)
@@ -92,7 +92,7 @@ try:
     for i in range(4):
         p.blink(pinlist, 0.2)
         time.sleep(0.10)
-    comment out lines above with time 
+    # comment out lines above with time 
     for i in range(3):
         p.switchsides(pinlist, 0.32)
     # time.sleep(0.5)
